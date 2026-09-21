@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    background-image: url('background.jpg');
+}
+
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    color: aliceblue; 
+}
+
+/* THIS MAKES THE IMAGES 3 ACROSS */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 190px);
+    gap: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 190px;
+    height: 190px;
+}
+
+.image-container img {
+    width: 190px;
+    height: 190px;
+    transition: opacity 0.3s;
+}
+
+.image-container:hover img {
+    opacity: 0;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 190px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-container:hover .text {
+    opacity: 1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>alexs photodump of things dawg enjoys</h1>
+
+<audio id="music" loop>
+    <source src="voila.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function() {
+    let music = document.getElementById("music");
+    music.volume = 0.5;
+    music.play();
+}, { once: true });
+</script>
+
+
+<!-- THE GALLERY STARTS HERE -->
+
+<div class="gallery">
+
+<div class="image-container">
+    <img src="qt gun.jpg">
+    <div class="text">This is a photo of quentin tarantino holding a gun. Quentin is a famous movie director known for creating amazing movies such as Inglourious Basterds and Pulp Fiction!</div>
+</div>
+
+<div class="image-container">
+    <img src="db.cig.jpg">
+    <div class="text">This is a photo of daniel bruhl holding a cigarette. Daniel Bruhl is a famous German-Spanish actor who is known for great roles such as Niki Lauda - Rush 2013, Fredrick Zoller - Inglourious Basterds 2009 and Helmut Zemo in Civil War - 2014!</div>
+</div>
+
+<div class="image-container">
+    <img src="france gall.jpg">
+    <div class="text">This is an image of the beautiful famous French singer France Gall, she is known for singing the highly popular song Laisse tomber les filles in 1964!</div>
+</div>
+
+<div class="image-container">
+    <img src="flowers.jpg">
+    <div class="text">This is a photo of Francoise Hardy, the beautiful French singer who is the singer of the background music of this website, surrounded by gorgeous flowers!</div>
+</div>
+
+<div class="image-container">
+    <img src="disfig soldier.jpg">
+    <div class="text">This is a photo of a soldier presumably coming back after war with a nasty scar. I enjoyed this photo thoroughly as it shows how brave he was during wartime!</div>
+</div>
+
+<div class="image-container">
+    <img src="too-late.jpg">
+    <div class="text">The text "Very early in my life it was too late" is an opening line from the 1984 novel The Lover by French author Marguerite Duras.</div>
+</div>
+
+<div class="image-container">
+    <img src="soldier-cat.jpg">
+    <div class="text">This photo is an adorable image of a soldier holding a cat on his helmet. I thought this was adorable as it showed a goofy side of these soldiers!</div>
+</div>
+
+<div class="image-container">
+    <img src="ad-cig.jpg">
+    <div class="text">This is a photo of the handsome August Diehl, a German actor who is known for some amazing roles such as Gunther Schneller in Was nützt die Liebe in Gedanken, Dieter Hellstrom in Inglourious Basterds (same as Daniel!) and Sebastian in Slumming :)</div>
+</div>
+
+<div class="image-container">
+    <img src="daniel-bruhl-fear.jpg">
+    <div class="text">This is Daniel Bruhl again lol no extreme text for this just admire..</div>
+</div>
+
+<div class="image-container">
+    <img src="oscar.jpg">
+    <div class="text">Oscar Fingal O'Fflahertie Wills Wilde was an Irish author, poet and playwrighter. He was one of the most influential dramatists in London in the 1890s! I love him because hes irish and also because his poems are beautiful!</div>
+</div>
+
+<div class="image-container">
+    <img src="c'est.jpg">
+    <div class="text">This is a photo of francoise hardy again.. sorry!! i just love her.. just admire this .-.</div>
+</div>
+
+<div class="image-container">
+    <img src="franz kafka draw.jpg">
+    <div class="text">This is a drawing I stole from Pinterest of Franz Kafka famous author known for his apparent depressing stories and his alienistic views on himself which I highly agree with!</div>
+</div>
+
+</div>
+
+<!-- THE GALLERY ENDS HERE -->
+
+</body>
+</html>
